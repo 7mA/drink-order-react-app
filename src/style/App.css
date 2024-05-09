@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  margin-top: 100px;
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* 水平方向に中央揃えに */
+  align-items: center; /* 垂直方向に中央揃えに */
 }
 
 .App-logo {
@@ -35,4 +39,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.button-list-container {
+  display: flex; /* フレックスコンテナとして設定 */
+  flex-direction: column; /* 子要素を縦方向に配置 */
+  gap: 10px; /* ボタン間の間隔 */
 }

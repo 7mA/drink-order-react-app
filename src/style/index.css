@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button-container {
+  display: inline-block; /* ボタンのコンテナをインラインブロックに */
+  position: relative; /* カウンターの位置調整のために相対位置を設定 */
+}
+
+.custom-button {
+  margin: 0 5px;
+  padding: 10px 20px; /* パディングを調整してボタンの高さを設定 */
+  width: 200px; /* ボタンの幅を指定 */
+  height: 50px; /* ボタンの高さを指定 */
+  border-radius: 20px; /* 丸角の半径を指定 */
+  display: flex;
+  justify-content: space-between; /* 子要素を左右に寄せて、間にスペースを作る */
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff; /* 白背景 */
+  color: #000; /* 黒文字 */
+  border: 2px solid #000; /* 黒枠 */
+  outline: none;
+  transition: background-color 0.3s; /* 背景色の変更にトランジションを適用 */
+}
+
+.custom-button:active {
+  background-color: #f0f0f0; /* ボタンを押すと離すエフェクト */
+}
+
+.custom-button > .counter {
+  position: absolute; /* 絶対位置 */
+  top: -5px; /* 右上に配置 */
+  right: 0px;
+  width: 20px; /* カウンターのサイズ */
+  height: 20px;
+  background-color: red; /* 赤い背景 */
+  color: #fff; /* 白文字 */
+  border-radius: 50%; /* 丸形 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px; /* フォントサイズ */
+}
+
+.left-text {
+  margin-right: auto; /* 左寄りに配置 */
+}
+
+.right-text {
+  margin-left: auto; /* 右寄りに配置 */
+}
+
+.frame-container {
+  border: 2px solid #000; /* 枠線 */
+  padding: 10px 30px 30px 30px; /* 内側の余白 */
+  margin-left: 100px; /* 左側の余白（ボタン群との間隔） */
+  width: 200px; /* ボタンの幅を指定 */
+}
+
+hr {
+  margin: 15px 0; /* 分割線の上下の余白 */
+}

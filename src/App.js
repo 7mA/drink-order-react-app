@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './style/App.css';
+import DrinkOrderButton from './components/DrinkOrderButton';
+import DrinkBillFrame from './components/DrinkBillFrame';
 
 function App() {
+
+  const drinkList = [
+    {
+      name: 'コーヒー',
+      price: 480,
+      id: 'coffee'
+    },
+    {
+      name: '紅茶',
+      price: 280,
+      id: 'tea'
+    },
+    {
+      name: 'ミルク',
+      price: 180,
+      id: 'milk'
+    },
+    {
+      name: 'コーラ',
+      price: 190,
+      id: 'coke'
+    },
+    {
+      name: 'ビール',
+      price: 580,
+      id: 'beer'
+    }
+  ];
+
+  const [count, setCount] = useState(0);
+  const [price, setPrice] = useState(0);
+
+  const handleClick = async (appendPrice) => {
+    setCount(PreviousCount => PreviousCount + 1);
+    setPrice(PreviousPrice => PreviousPrice + appendPrice);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="button-list-container">
+        { drinkList.map((item, index) => (
+          <DrinkOrderButton item={item} key={index} callback={handleClick} />
+        )) }
+      </div>
+      <DrinkBillFrame count={count} price={price} />
     </div>
   );
 }
