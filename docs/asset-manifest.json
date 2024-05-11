@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/drink-order-react-app/static/css/main.1d7beb0a.css",
+    "main.js": "/drink-order-react-app/static/js/main.89030da1.js",
+    "static/js/453.39fda08f.chunk.js": "/drink-order-react-app/static/js/453.39fda08f.chunk.js",
+    "index.html": "/drink-order-react-app/index.html",
+    "main.1d7beb0a.css.map": "/drink-order-react-app/static/css/main.1d7beb0a.css.map",
+    "main.89030da1.js.map": "/drink-order-react-app/static/js/main.89030da1.js.map",
+    "453.39fda08f.chunk.js.map": "/drink-order-react-app/static/js/453.39fda08f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d7beb0a.css",
+    "static/js/main.89030da1.js"
+  ]
+}
